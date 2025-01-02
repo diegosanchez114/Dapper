@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\diego\\.nuget\\packages\\": {}
+    "C:\\Users\\diego.sanchez\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\diego\\Desktop\\Dapper\\MinimalAPIPeliculas\\MinimalAPIPeliculas\\MinimalAPIPeliculas.csproj",
+      "projectUniqueName": "C:\\Users\\diego.sanchez\\Desktop\\Dapper\\Dapper\\MinimalAPIPeliculas\\MinimalAPIPeliculas\\MinimalAPIPeliculas.csproj",
       "projectName": "MinimalAPIPeliculas",
-      "projectPath": "C:\\Users\\diego\\Desktop\\Dapper\\MinimalAPIPeliculas\\MinimalAPIPeliculas\\MinimalAPIPeliculas.csproj",
-      "packagesPath": "C:\\Users\\diego\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\diego\\Desktop\\Dapper\\MinimalAPIPeliculas\\MinimalAPIPeliculas\\obj\\",
+      "projectPath": "C:\\Users\\diego.sanchez\\Desktop\\Dapper\\Dapper\\MinimalAPIPeliculas\\MinimalAPIPeliculas\\MinimalAPIPeliculas.csproj",
+      "packagesPath": "C:\\Users\\diego.sanchez\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\diego.sanchez\\Desktop\\Dapper\\Dapper\\MinimalAPIPeliculas\\MinimalAPIPeliculas\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\diego\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\diego.sanchez\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -64,7 +64,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0Vh/i+l7lJexT00r7m6xXVCZhvldOU+LBbkGf42vDFG4wyX3dczn4GglscSdsruwm6bjYPLNjrF2B1V/FX9PaQ==",
+  "dgSpecHash": "GCgZLaYkeJttpVMnAJ0fLMut0rA/DPd7y9PYs0RlRfBkK8wUNLSqrEBXxk3woKu6QPGpaMkce+mvBZX9YiAHjg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\diego\\Desktop\\Dapper\\MinimalAPIPeliculas\\MinimalAPIPeliculas\\MinimalAPIPeliculas.csproj",
+  "projectFilePath": "C:\\Users\\diego.sanchez\\Desktop\\Dapper\\Dapper\\MinimalAPIPeliculas\\MinimalAPIPeliculas\\MinimalAPIPeliculas.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

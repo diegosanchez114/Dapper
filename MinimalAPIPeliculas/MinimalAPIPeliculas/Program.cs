@@ -2,18 +2,43 @@
 
 //var apellidoEnMayusculas = apellido.ToUpper();
 
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 using MinimalAPIPeliculas.Entidades;
 
 var builder = WebApplication.CreateBuilder(args);
 
-var apellido = builder.Configuration.GetValue<string>("apellido");
+var origenesPermitidos = builder.Configuration.GetValue<string>("origenesPermitidos")!;
+
+//Creacion de los servicios
+builder.Services.AddCors(opciones =>
+{
+    opciones.AddDefaultPolicy(configuracion =>
+    {
+        configuracion.WithOrigins(origenesPermitidos).AllowAnyHeader().AllowAnyMethod();
+    });
+
+    opciones.AddPolicy("libre", configuracion =>
+    {
+        configuracion.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod();
+    });
+});
+    
+
+
+
+
+
+
+
+//Fin de creacion de los servicios
 var app = builder.Build();
 
+//Creacion de los middlewares
+app.UseCors();
 
 
-app.MapGet("/", () => apellido);
-app.MapGet("/otra", () => "Hola Diego Sanchez");
+app.MapGet("", [EnableCors(policyName: "libre")]() => "Hola Diego Sanchez");
 
 app.MapGet("/generos", () =>
 {
