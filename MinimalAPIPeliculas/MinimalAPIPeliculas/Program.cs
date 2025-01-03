@@ -23,6 +23,8 @@ builder.Services.AddCors(opciones =>
         configuracion.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod();
     });
 });
+
+builder.Services.AddOutputCache();
     
 
 
@@ -36,6 +38,8 @@ var app = builder.Build();
 
 //Creacion de los middlewares
 app.UseCors();
+
+app.UseOutputCache();
 
 
 app.MapGet("", [EnableCors(policyName: "libre")]() => "Hola Diego Sanchez");
@@ -63,6 +67,6 @@ app.MapGet("/generos", () =>
     };
 
     return generos;
-});
+}).CacheOutput(c => c.Expire(TimeSpan.FromSeconds(15)));
 
 app.Run();
